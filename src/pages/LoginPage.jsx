@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ForgotPage() {
+export default function LoginPage() {
   return (
     <div
       style={{
@@ -22,24 +22,14 @@ export default function ForgotPage() {
           borderRadius: "16px",
         }}
       >
-        <h2>Register Yourself</h2>
-        <h5>Enter your details</h5>
+        <h2>Sign In</h2>
+        <h5>Enter your email and password</h5>
         <form
           style={{
             width: "100%",
             marginTop: "20px",
           }}
         >
-          <label htmlFor="name">Name</label>
-          <br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            style={{ width: "100%", borderRadius: "8px", marginBottom: "10px" }}
-          />
-          <br />
           <label htmlFor="email">Email</label>
           <br />
           <input
@@ -60,24 +50,15 @@ export default function ForgotPage() {
             style={{ width: "100%", borderRadius: "8px", marginBottom: "10px" }}
           />
           <br />
-          <label htmlFor="confirmpassword">Confirm Password</label>
-          <br />
-          <input
-            type="password"
-            name="confirmpassword"
-            id="confirmpassword"
-            required
-            style={{ width: "100%", borderRadius: "8px", marginBottom: "10px" }}
-          />
 
           <button type="submit" style={{}}>
-            Register
+            Signin
           </button>
         </form>
 
         <div style={{ display: "flex", marginTop: "12px" }}>
-          <p style={{ marginRight: "5px" }}>Already Registered?</p>
-          <Link to="/">Login</Link>
+          <p style={{ marginRight: "5px" }}>New Here?</p>
+          <Link to="/register">Sign Up</Link>
         </div>
       </div>
     </div>
